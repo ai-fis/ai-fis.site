@@ -17,7 +17,28 @@
       color: white;
       padding: 1rem;
       text-align: center;
+    }<!-- AI-FIS Technologies Inc. Heartbeat Sound Module -->
+<div id="heartbeat-module" style="text-align: center; margin: 20px;">
+    <audio id="heartbeat-audio" preload="auto" controls style="display:none;">
+        <source src="AI-FIS-Heartbeat.mid" type="audio/midi">
+        Your browser does not support MIDI playback.
+    </audio>
+    <button onclick="toggleHeartbeat()" style="background-color: #2C2F36; color: #C9A93C; border: none; padding: 12px 24px; font-size: 18px; border-radius: 10px; cursor: pointer;">
+        ♥ Play AI-FIS Heartbeat
+    </button>
+</div>
+
+<script>
+function toggleHeartbeat() {
+    var audio = document.getElementById('heartbeat-audio');
+    if (audio.paused) {
+        audio.play();
+    } else {
+        audio.pause();
     }
+}
+</script>
+
     nav {
       background: #005fa3;
       display: flex;
