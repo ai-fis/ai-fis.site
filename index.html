@@ -112,8 +112,7 @@
 </head>
 <body>
   <header>
-   <img src="/uploads/logo.webp" alt="AI-FIS Global Financial Integrity Network Logo" class="logo-glow">
-
+    <img src="/uploads/logo.webp" alt="AI-FIS Global Financial Integrity Network Logo" class="logo-glow">
     <button class="heartbeat-btn" onclick="playHeartbeat()">&#10084; Play AI-FIS Heartbeat</button>
   </header>
   <nav>
@@ -143,7 +142,8 @@
   <script>
     function playHeartbeat() {
       // Replace with actual sound file path
-      const audio = new Audio('/audio/ai-fis-heartbeat.mp3');
+      const audio = new Audio('/uploads/heartbeat.mp3');
+
       audio.play();
     }
   </script>
