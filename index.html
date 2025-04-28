@@ -1,3 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI-FIS Technologies Inc.</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0d0d0d;
+      color: #dcdcdc;
+    }
+    header {
+      background-color: #000000;
+      color: #ffffff;
+      padding: 2rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    nav {
+      background: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #dcdcdc;
+      text-decoration: none;
+      font-weight: bold;
+      border: 2px solid #dcdcdc;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      transition: background 0.3s, color 0.3s;
+    }
+    nav a:hover {
+      background: #ffffff;
+      color: #000000;
+    }
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem;
+    }
+    h2 {
+      color: #ffffff;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+    .btn {
+      display: inline-block;
+      margin: 1rem 1rem 0 0;
+      padding: 0.8rem 1.5rem;
+      background-color: #ffffff;
+      color: #000000;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s, color 0.3s;
+    }
+    .btn:hover {
+      background-color: #dcdcdc;
+      color: #000000;
+    }
+    footer {
+      background: #1a1a1a;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #999;
+      margin-top: 4rem;
+    }
+    #heartbeat-module {
+      margin: 2rem 0;
+      text-align: center;
+    }
+    #heartbeat-module button {
+      background-color: #2C2F36;
+      color: #C9A93C;
+      border: none;
+      padding: 12px 24px;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    AI-FIS Technologies Inc. | Investor & Partner Portal
+  </header>
+
+  <div id="heartbeat-module">
+    <audio id="heartbeat-audio" preload="auto" controls style="display:none;">
+      <source src="AI-FIS-Heartbeat.mid" type="audio/midi">
+      Your browser does not support MIDI playback.
+    </audio>
+    <button onclick="toggleHeartbeat()">
+      ♥ Play AI-FIS Heartbeat
+    </button>
+  </div>
+
+  <script>
+    function toggleHeartbeat() {
+      var audio = document.getElementById('heartbeat-audio');
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    }
+  </script>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="partner.html">Partner</a>
+    <a href="thank-you.html">Thank You</a>
+    <a href="AI-FIS_Investor_Brief.pdf">Brief</a>
+    <a href="AI-FIS_Investor_Presentation.pptx">Deck</a>
+    <a href="AI-FIS_Investor_Deck_Preview.pdf">Preview</a>
+  </nav>
+
+  <div class="container">
+    <h2>Welcome to Our Portal</h2>
+    <p>Explore our strategic materials, align with our mission, and join us in building ethical AI-powered financial integrity systems across the globe.</p>
+
+    <h2>Download Documents</h2>
+    <a class="btn" href="AI-FIS_Investor_Brief.pdf">Investor Brief (PDF)</a>
+    <a class="btn" href="AI-FIS_Investor_Presentation.pptx">Investor Deck (PPTX)</a>
+    <a class="btn" href="AI-FIS_Investor_Deck_Preview.pdf">Deck Preview (PDF)</a>
+  </div>
+
+  <footer>
+    &copy; 2025 AI-FIS Technologies Inc. | outreach@ai-fis.tech
+  </footer>
+</body>
+</html>
 
 <section class="hero-logo">
   <img src="/path-to-your-uploaded-image/ai-fis-earth-logo.webp" alt="AI-FIS Global Financial Integrity Network Logo" class="logo-glow">
